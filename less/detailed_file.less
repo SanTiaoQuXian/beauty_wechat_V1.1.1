@@ -1,0 +1,62 @@
+@import "common.less";
+@import "reset.less"; 
+@import "activation_log.less";
+
+.wrap{
+    .bar{
+        .add{
+            position: absolute;
+            font-size: 0.7rem;
+            right: 14px;
+        }
+    }
+    .content{
+        text-align: -webkit-auto;
+        ul{
+            border-bottom: 1px solid #d9d9d9;
+        }
+        ul li{
+            padding: 0.3rem 0.8rem;
+        }
+        .content_body{
+            width: 100%;
+            
+        }
+        .content_Btab span{
+            display: inline-block;
+            //margin-right: 0.3rem;
+            //width: 20%;
+            line-height: 26px;
+            .date{
+                width: 28%!important;
+            }
+        }
+        .content_Btab a{
+            display: inline-block;
+            //margin-right: 0.3rem;
+            //width: 20%;
+            line-height: 26px;
+            .date{
+                width: 28%!important;
+            }
+        }
+        .content_Btab .name,.del,.edit{
+            width: 16%;
+        }
+        .content_Btab .date{
+            width: 47%;
+        }
+        .content_Btab .del,.edit{
+            color: @beauty-white;
+        }
+        .content_Btab .del,.edit{
+            text-align: center;
+            background: @beauty-green;
+            border-radius: 12px;
+        }
+        .footer{
+            padding-top: 0.5rem;
+            text-align: center;
+        }
+    }
+}

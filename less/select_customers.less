@@ -1,0 +1,52 @@
+@import "common.less";
+@import "reset.less"; 
+
+//头部bar样式
+.wrap{
+    height: 100%;
+    .bar-nav{
+        background: @beauty-white;
+        a{
+            color: #333;
+            position: absolute;
+            span{
+                font-size: 0.7rem;
+                font-weight: 100;
+            }
+        }
+        .title{
+            display: inline-block;
+            color: #333;
+            position: absolute;
+        }
+    }
+}
+.content{
+    background: #fff;
+    .bar{
+        position: static;
+        .searchbar{
+            background: #f5f5f5;
+        }
+    }
+    ul li{
+        height: 2.3rem;
+        display: block;
+    }
+    .content_customers{
+        border-bottom: 1px solid #fbf5f5;
+        .content_customers_list{
+            padding: 0.8rem 1rem;
+            line-height: 0.8rem;
+            a{
+                position: relative;
+                align-items: center;
+                font-size: 0.7rem;
+                p:nth-child(2){
+                    position: absolute;
+                    right: 0;
+                }
+            }
+        }
+    }
+}

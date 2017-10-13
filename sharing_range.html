@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<title>发布消息</title>
+		<meta name="viewport" content="initial-scale=1, maximum-scale=1">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+		<link rel="stylesheet" href="css/frame/font-awesome.min.css">
+		<link rel="stylesheet" href="css/frame/sm.min.css">
+		<link rel="stylesheet" href="css/sharing_range.css">
+	</head>
+	<body>
+		<div class="wrap">
+	        <!-- 标题栏 -->
+	        <header class="bar bar-nav">
+	            <a href="javascript:history.back(-1);" class="icon icon-left off">顾客回访</a>
+	            <h1 class="title">选择分享范围</h1>
+	            <a href="publish_message.html" class="publish">确定</a>
+	        </header>
+	        <!-- 这里是页面内容区 -->
+	        <div class="content">
+				<ul>
+					<li onclick="change_pic();">
+						<div class="content_customers">
+			        		<div class="content_customers_list">
+				    			<!--<a href="" class="flex-row select_sure2">-->
+				    				<img id="sharing_pic" src="imges/select_sure2.png"/>
+				    				<p class="flex-row"><span>全院家人</span></p>
+				    			<!--</a>-->
+				    		</div>
+			        	</div>
+					</li>
+					<li>
+						<div class="content_customers">
+			        		<div class="content_customers_list">
+				    			<!--<a href="" class="flex-row select_sure2" external>-->
+				    				<img id="sharing_pic" src="imges/select_sure2.png"/>
+				    				<p class="flex-row"><span>美业云</span><span>院长</span></p>
+				    			<!--</a>-->
+				    		</div>
+			        	</div>
+					</li>
+					<li>
+						<div class="content_customers">
+			        		<div class="content_customers_list">
+				    			<!--<a href="" class="flex-row select_sure2" external>-->
+				    				<img id="sharing_pic" src="imges/select_sure2.png"/>
+				    				<p class="flex-row"><span>菩瑞婷美容连锁店</span></p>
+				    				<p class="selceted">已选择117个家人<span class="icon icon-right"></span></p>
+				    			<!--</a>-->
+				    		</div>
+			        	</div>
+					</li>
+				</ul>					        	        	
+	        </div>
+	   	</div>
+	   
+	   	<script type='text/javascript' src='js/frame/zepot.min.js'></script>
+		<script type='text/javascript' src='js/frame/sm.min.js'></script>
+		<script type='text/javascript' src='js/common.js'></script>
+		<script type="text/javascript">
+			//点击切换
+			function change_pic(){
+				//alert(222);
+				var imgObj = document.getElementById("sharing_pic");
+				var Flag=(imgObj.getAttribute("src",2)=="imges/select_sure2.png")
+				imgObj.src=Flag?"imges/select_sure1.png":"imges/select_sure2.png";
+			
+				//$('.content ul li a').removeClass('select_sure2').addClass('select_sure2');
+				
+			}
+			
+		</script>
+	</body>
+</html>

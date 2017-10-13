@@ -1,0 +1,68 @@
+@import "common.less";
+@import "reset.less";
+.wrap{
+    height: 100%;
+    .bar-footer{
+        position: fixed;
+        bottom: 0;
+        z-index: 99;
+    }
+    .bar-nav{
+        background:@beauty-green;
+        .icon{
+            font-weight: 500;
+        }
+        .icon-left{
+            float: left;
+            font-size: 1rem;
+            color:#fff;
+        }
+        .operate{
+            position: absolute;
+            right: 0.5rem;
+            line-height: 2.2rem;
+            color:#fff;
+        }
+        .management_results{
+            color: #fff;
+        }
+        
+    }
+    .content{
+        background: #fff;
+        ul{
+            padding-bottom: 1.8rem;
+            li{
+                padding: 1.8rem 1rem 0;
+                span{
+                    width: 28%;
+                    display: inline-block;
+                    text-align: center;
+                }
+                i{
+                    display: inline-block;
+                    font-style: normal;
+                    border-bottom: 1px solid #989898;  
+                    height: 1.5rem;
+                    width: 72%;
+                }
+                input{
+                    padding-left: 10px;
+                    width: 72%;
+                    border: none;
+                    height: 1.4rem;
+                    -webkit-appearance: none;
+                    
+                }
+                select{
+                    height: 30px;
+                    border-color: @beauty-green;
+                    width: 40%;
+                    option{
+                        border-color: @beauty-green;
+                    }
+                }
+            }
+        }    
+    }
+} 

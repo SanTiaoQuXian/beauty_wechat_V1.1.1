@@ -1,0 +1,67 @@
+@import "common.less";
+@import "reset.less"; 
+
+//头部bar样式
+.wrap{
+    height: 100%;
+    .bar{
+        background: @beauty-green;
+        a{
+            color: @beauty-white;
+            position: absolute;
+            span{
+                font-size: 0.7rem;
+                font-weight: 100;
+            }
+        }
+        .title{
+            display: inline-block;
+            color: @beauty-white;
+            position: absolute;
+        }
+    }
+}
+.content{
+    text-align: center;
+    background: @beauty-white;
+    .content_head{
+        border-bottom: 0.3rem solid #f7f7f8;
+    }
+    .content_nav{
+        padding: 1rem 0.2rem;
+    }
+    a{
+        display: inline-block;
+        width: 24%;
+        line-height: 36px;
+        text-align: center;
+    }
+    .icon{
+        color: @beauty-green;
+        margin-right: 0.2rem;
+    }
+    .content-mould{
+        background: @beauty-green;
+        border-radius: 5px;
+        color: @beauty-white;
+    }
+    .content_input{
+        padding: 0rem 0.2rem 1rem;
+    }
+    .content_input textarea{
+        height: 100px;
+        width: 70%;
+        border-radius: 5px;
+        vertical-align: middle;
+        border-color: #999;
+        -webkit-appearance: none;
+    }
+    .content_input button{
+        width: 28%;
+        height: 101px;
+        border: none;
+        background: @beauty-green;
+        color: @beauty-white;
+        border-radius: 5px;
+    }
+}

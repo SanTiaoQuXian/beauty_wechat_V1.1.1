@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<title>发布消息</title>
+		<meta name="viewport" content="initial-scale=1, maximum-scale=1">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+		<link rel="stylesheet" href="css/frame/font-awesome.min.css">
+		<link rel="stylesheet" href="css/frame/sm.min.css">
+		<link rel="stylesheet" href="css/publish_message.css">
+	</head>
+	<body>
+		<div class="wrap">
+	        <header class="bar bar-nav">
+	            <a href="javascript:history.back(-1);" class="off">取消</a>
+	            <h1 class="title">顾客回访</h1>
+	            <a href="return_visit.html" class="publish">发布</a>
+	        </header>
+	        <div class="content">	        	
+	        	<div class="content_space">
+	        		<div class="publish_message_list">
+		    			<a href="select_customers.html" class="flex-row" external>
+		    				<p class="flex-row"><span>选择顾客</span></p>
+		    				<p><span class="icon icon-right"></span></p>
+		    			</a>
+		    		</div>
+	        	</div>
+	        	<div class="content_textarea">
+	        		<div class="content_textarea_space">
+	        			<textarea id="textarea" type="text" placeholder="写下回访内容吧~~~"></textarea>	
+	        		</div>	        		
+	        	</div>
+	        	<div id="keep_model">
+	        		<div class="content_model">
+	        			<img src="imges/cardlist4-icon.png" alt=""/>
+	        			<span>保存模版</span>
+	        		</div>
+	        	</div>
+	        	<div class="content_share content_space">
+	        		<div class="publish_message_list">
+		    			<a href="sharing_range.html" class="flex-row" external>
+		    				<p class="flex-row"><span>分享范围</span></p>
+		    				<p>全部家人<span class="icon icon-right"></span></p>
+		    			</a>
+		    		</div>
+	        	</div>
+	        	<div class="content_select_model"><span>选择模板</span></div>
+	        	<div class="content_select_model_list  content_space">
+	        		<div class="publish_message_list">
+		    			<a href="" class="flex-row" external>
+		    				<p class="flex-row"><span>我的</span></p>
+		    				<p>0<span class="icon icon-right"></span></p>
+		    			</a>
+		    		</div>
+	        	</div>
+	        	<div class="content_select_model_list content_space">
+	        		<div class="publish_message_list">
+		    			<a href="" class="flex-row" external>
+		    				<p class="flex-row"><span>院的</span></p>
+		    				<p>20<span class="icon icon-right"></span></p>
+		    			</a>
+		    		</div>
+	        	</div>
+	        	<div class="content_select_model_list content_space">
+	        		<div class="publish_message_list">
+		    			<a href="" class="flex-row" external>
+		    				<p class="flex-row"><span>问候</span></p>
+		    				<p>132<span class="icon icon-right"></span></p>
+		    			</a>
+		    		</div>
+	        	</div>
+	        	<div class="content_select_model_list content_space">
+	        		<div class="publish_message_list">
+		    			<a href="" class="flex-row" external>
+		    				<p class="flex-row"><span>眼部护理</span></p>
+		    				<p>34<span class="icon icon-right"></span></p>
+		    			</a>
+		    		</div>
+	        	</div>
+	        	<div class="content_select_model_list content_space">
+	        		<div class="publish_message_list">
+		    			<a href="" class="flex-row" external>
+		    				<p class="flex-row"><span>专业祛痘</span></p>
+		    				<p>94<span class="icon icon-right"></span></p>
+		    			</a>
+		    		</div>
+	        	</div>
+	        </div>
+	   	</div>
+	   
+	   
+	   
+
+	   	<script type='text/javascript' src='js/frame/zepot.min.js'></script>
+		<script type='text/javascript' src='js/frame/sm.min.js'></script>
+		<script type='text/javascript' src='js/common.js'></script>
+		
+		<script>
+			//监听textarea
+			$(function(){
+				$("#textarea").on('keyup', function(event){ 	
+			        var val=$(this).val();
+			        var len=val.length;
+			        console.log(len)
+			        if(len>0){
+			         	$('.publish').css({"color":"#df5552"});
+			        }else{
+			        	$('.publish').css({"color":"#d3d3d3"});
+			        }
+			    });
+			    
+			});
+			
+		</script>
+	</body>
+</html>

@@ -1,0 +1,106 @@
+@import "common.less";
+@import "reset.less";
+.wrap{
+    height: 100%;
+    .bar-footer{
+        position: fixed;
+        bottom: 0;
+        z-index: 99;
+    }
+    .bar-nav{
+        background:@beauty-green;
+        .icon{
+            font-weight: 500;
+        }
+        .icon-left{
+            float: left;
+            font-size: 1rem;
+            color:#fff;
+        }
+        .operate{
+            position: absolute;
+            right: 0.5rem;
+            line-height: 2.2rem;
+            color:#fff;
+        }
+        .management_results{
+            color: #fff;
+        }
+        
+    }
+    .content{
+        padding-bottom: 2.86rem;
+        background:#fff;
+        .content_body{
+            ul{
+                background: #f7f7f8;
+                padding-bottom: 0.8rem;
+                li{
+                    padding: 0.8rem 1rem 0;
+                }
+            }
+            .target,.percentum{
+                display: inline-block;
+                width: 49%;
+                vertical-align: middle;
+                height: 1.4rem;
+            }
+            .target span{
+                display: block;
+            }
+            .target i{
+                font-style: normal;
+                color:@beauty-green ;
+            }
+            .percentum{
+                text-align: center;
+                background: #c1acac;
+                color: #fff;
+                line-height: 1.4rem;
+            }
+        }
+        .header{
+                padding: 1rem 0.5rem;
+                height: 1rem;
+                justify-content: space-between;
+                align-items: center;
+                color: #fff;
+                background: #e1e1e1 !important;
+                a{
+                    color: #fff;
+                }
+               
+               .buttons-row{
+                   width: 100%;
+                    .button{
+                        border-color: #fff;
+                        color: #fff;   
+                    }
+                    .active{
+                           background-color: #fff;
+                           color: @beauty-green;
+                    }
+                } 
+            }
+        .show{
+            .flex-row p span{
+                color: @beauty-green;
+            }
+            .main{
+                margin-top: 0.2rem;
+                .waiting-list{
+                    li{
+                        padding: 1rem 1rem;
+                        justify-content: space-between;
+                        align-items: center;
+                        border-bottom: 1px solid #e1e1e1;
+                        div{
+                            color: #999;
+                            
+                        }
+                    }
+                }
+            } 
+        }
+    }
+} 

@@ -1,0 +1,27 @@
+@import "common.less";
+@import "reset.less"; 
+.bar{
+    position: fixed;
+    bottom: 0;
+    z-index: 9999;
+}
+.cards{
+    margin-bottom: 3rem;
+    .cards_b{margin:.5rem;background: @beauty-white;border-radius: 10px;padding:1rem 0 2rem; 
+        .cards_title{
+            @extend %flex;padding:0 1rem;
+            i{
+                font-size: 1.1rem;font-weight: 100;color:#393939;flex:1;font-weight: 400;font-style: normal;
+                img{height: 2rem;padding-right: 0.5rem;vertical-align: middle;}
+            }
+            span{float: right;border:1px solid #f7aa25; color: #f7aa25;font-size: 1rem;padding:0.2rem 0.5rem;border-radius: 0.5rem;}
+        }
+        .price{
+            i{text-align: left;font-weight: bold;}
+            text-align: right;padding:0 1rem;color:#666;margin-top: 2.3rem;
+            em{font-size: 1.3rem;flex:1;font-style: normal;
+                font{font-size: 0.8rem;}
+            }
+        }
+    }
+}

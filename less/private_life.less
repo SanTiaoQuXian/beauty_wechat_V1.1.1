@@ -1,0 +1,73 @@
+@import "common.less";
+@import "reset.less"; 
+@import "activation_log.less";
+@height: 40px;
+@border_none: none;
+@border: 1px solid #D9D9D9;
+@border_radius: 5px;
+
+.wrap{
+    .bar{
+        position: fixed;
+    }
+}
+//内容
+.content{
+    text-align: -webkit-auto;
+    .content_text{
+        border-bottom: 0.3rem solid #d8d8d8;
+    }
+    .content_text span{
+        display: block;
+        height: 70px;
+        background: #f7f7f7;
+        line-height: 70px;
+        text-align: left;
+        color: #666;
+        padding: 0 0 0 0.8rem;
+    }
+    .content_nav{
+        span{
+            display: inline-block;
+            //width: 94%;
+            line-height: 35px;
+            border: none;
+            border-radius: 5px;
+            border: 1px solid #999;
+            padding: 0 10px;
+            margin: 0 2px;
+            margin-bottom: 10px;
+        }
+    }
+    
+    .footer{
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+        height: 60px;
+        border-top: 1px solid #e4dada;
+        background: #f8f8f8;
+        text-align: center;
+        
+    }
+    .footer input{
+        width: 70%;
+        height: 40px;
+        margin-top: 10px;   
+        //border: @border_none;
+        border: @border;
+        border-radius: @border_radius; 
+        padding-left: 10px;
+        -webkit-appearance: none;
+    }
+    .footer button{
+        width: 20%;
+        height: 41px;
+        //margin-top: 0px;   
+        border: @border_none;
+        //border: @border;
+        border-radius: @border_radius; 
+        background: @beauty-green;
+        color: @beauty-white;
+    }
+}
